@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-md-5 card-background-color p-4 m-5">
+        <div class="d-flex my-4">
+            <div class="align-self-center input-label-width">{{localization.entryTime}}</div>
+            <div class="flex-grow-1 text-center">
+                <input type="text text-center" class="form-control" [value]="entryTime" disabled>
+            </div>
+        </div>
+        <div class="d-flex my-4">
+            <div class="align-self-center input-label-width">{{localization.collNo}}</div>
+            <div class="flex-grow-1">
+                <input type="text" class="form-control" [value]="">
+            </div>
+        </div>
+        <div class="d-flex my-4">
+            <div class="align-self-center input-label-width">{{localization.routCardNo}}</div>
+            <div class="flex-grow-1">
+                <input type="text" class="form-control" [value]="">
+            </div>
+        </div>
+        <div>
+            <div>{{localization.specifications}}</div>
+            <div>
+                <textarea name="" id="" class="form-control"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5 card-background-color m-5 justify-content-end">
+        <div class="d-flex justify-content-center bg-light">
+            <div class="mx-1">
+                <button class="btn sub-btn btn-light isActive" id="quickEntry">{{localization.user}}</button>
+            </div>
+            <div class="mx-1">
+                <button class="btn sub-btn btn-secondary" id="report">{{localization.guage}}</button>
+            </div>
+            <div class="mx-1">
+                <button class="btn sub-btn btn-secondary" id="activity">{{localization.equipment}}</button>
+            </div>
+            <div class="mx-1">
+                <button class="btn sub-btn btn-secondary" id="activity">{{localization.erp}}</button>
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="mb-5">
+                <div class="text-center">{{localization.rolledQuantity}}</div>
+                <div>
+                    <input type="text" class="form-control" [value]="">
+                </div>
+            </div>
+            <div>
+                <div class="text-center">{{localization.cgQuantity}}</div>
+                <div>
+                    <input type="text" class="form-control" [value]="">
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-secondary">{{localization.submit}}</button>
+            </div>
+        </div>
+    </div>
+</div>

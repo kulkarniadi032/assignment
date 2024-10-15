@@ -1,0 +1,26 @@
+<div class="mt-3">
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div>
+                <button class="btn main-btn btn-light isActive" id="quickEntry" (click)="handleSelctedTab('quickEntry')">{{localization.quickEntry}}</button>
+            </div>
+            <div class="mx-1">
+                <button class="btn main-btn btn-secondary" id="report" (click)="handleSelctedTab('report')">{{localization.report}}</button>
+            </div>
+            <div>
+                <button class="btn main-btn btn-secondary" id="activity" (click)="handleSelctedTab('activity')">{{localization.activity}}</button>
+            </div>
+        </div>
+    </div>
+    <div class="border container">
+        <div *ngIf="isShowQuickEntry">
+            <app-quick-entry></app-quick-entry>
+        </div>
+        <div *ngIf="isShowReport">
+            <app-report></app-report>
+        </div>
+        <div *ngIf="isShowActivity">
+            <app-activity></app-activity>
+        </div>
+    </div>
+</div>

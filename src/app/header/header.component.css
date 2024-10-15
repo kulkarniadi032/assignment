@@ -1,0 +1,26 @@
+.header-dropdown-width{
+    width: 12rem;
+}
+.dropdown{
+    justify-content: space-between !important;
+}
+
+.userNameTextSize{
+    font-size: 0.9rem;
+}
+
+.userPositionTextSize{
+    font-size: 0.7rem
+}
+
+.header-icon{
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 1.2rem;
+}

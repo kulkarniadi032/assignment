@@ -1,0 +1,8 @@
+<div class="container main-activity-container p-4">
+    <div *ngFor="let item of localization.activityArray">
+        <div class="d-flex mt-2">
+            <div class="label">{{item[0].toUpperCase()}}</div>
+            <div class="ms-4 align-self-center">{{item}}</div>
+        </div>
+    </div>
+</div>

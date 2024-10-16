@@ -15,9 +15,21 @@
             </div>
         </div>
         <div>
-            <button class="btn btn-dark report-approval-btn d-flex justify-content-between">
+            <button class="btn btn-dark report-approval-btn d-flex justify-content-between" *ngIf="isSubmitForApproval">
                 <span><i class="bi bi-download"></i></span>
                 <span>{{localization.submitForApproval}}</span>
+            </button>
+            <button class="btn btn-secondary report-approval-btn d-flex justify-content-between" *ngIf="ispendingForApproval">
+                <span><i class="bi bi-clock-history"></i></span>
+                <span>{{localization.pendingForApproval}}</span>
+            </button>
+            <button class="btn btn-success report-approval-btn d-flex justify-content-between" *ngIf="isApproved">
+                <span><i class="bi bi-hand-thumbs-up-fill"></i></span>
+                <span>{{localization.approved}}</span>
+            </button>
+            <button class="btn btn-danger report-approval-btn d-flex justify-content-between" *ngIf="isrejected">
+                <span><i class="bi bi-hand-thumbs-down-fill"></i></span>
+                <span>{{localization.rejected}}</span>
             </button>
         </div>
     </div>

@@ -44,5 +44,8 @@ export const Localization = {
         "Shirsha Molhotra has updated the workflow for IoT team. (@ 2:30 pm)",
         "Shirsha Molhotra has updated the workflow for IoT team. (@ 2:30 pm)",
         "Shirsha Molhotra has updated the workflow for IoT team. (@ 2:30 pm)",
-    ]
+    ],
+    rejected:"Rejected",
+    approved: "Approved",
+    pendingForApproval: "Pending For Approval"
 }

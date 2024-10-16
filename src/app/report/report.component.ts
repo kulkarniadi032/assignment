@@ -8,5 +8,9 @@ import { Localization } from 'src/localization';
 })
 export class ReportComponent {
   localization = Localization;
+  isSubmitForApproval: boolean = true;
+  ispendingForApproval: boolean = false;
+  isApproved: boolean = false;
+  isrejected: boolean = false;
 
 }
